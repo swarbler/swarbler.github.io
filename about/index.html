@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>website</title>
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"/>
+	<script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+<div id="header">
+	<div class="container">
+		<nav>
+			<!-- <img src="./images/logo.png" class="logo"> -->
+			<ul>
+				<li><a class="shadow home activenav" href=""><i data-feather="droplet"></i></a></li>
+				<li><a class="shadow page1" onclick="open('page1/')"><i data-feather="layout"></i></a></li>
+				<li><a class="shadow page2" onclick="open('page2/')"><i data-feather="layout"></i></a></li>
+				<li><a class="shadow page3" onclick="open('page3/')"><i data-feather="layout"></i></a></li>
+				<li><a class="shadow page4" onclick="open('page4/')"><i data-feather="layout"></i></a></li>
+				<li><a class="shadow about" onclick="open('about/')"><i data-feather="coffee"></i></a></li>
+			</ul>
+		</nav>
+		<div class="shadow header-text">
+			<p>hello</p>
+			<h1>Hi, I'm <span>about page</span> and I like to make all sorts of things!</h1>
+		</div>
+	</div>
+</div>
+<div class="createdby">
+	<p>Made with <i class="fa-solid fa-fish"></i> by samp</p>
+</div>
+<script>
+	feather.replace();
+</script>
+</body>
+</html>
