@@ -178,7 +178,8 @@ nav ul li a:hover::before{
 	margin-right: 10px;
 }
 
-/* tabs + cards ("floats") */
+/* floats (tabs + cards)*/
+
 .float{
 	background-color: #5b7555;
 	border-radius: 20px;
@@ -218,6 +219,9 @@ nav ul li a:hover::before{
 .tab:hover img{
 	border-radius: 15px;
 	filter: brightness(100%);
+}
+.tab:hover{
+	rotate: -1 -1 -1 2deg;
 }
 
 /* cards */
