@@ -9,78 +9,31 @@
 	<script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
+<nav>
+	<ul>
+		<li><a class="home activenav" href=""><i data-feather="droplet"></i></a></li>
+		<li><a class="page1" href="page1/"><i data-feather="layout"></i></a></li>
+		<li><a class="page2" href="page2/"><i data-feather="layout"></i></a></li>
+		<li><a class="page3" href="page3/"><i data-feather="layout"></i></a></li>
+		<li><a class="page4" href="page4/"><i data-feather="layout"></i></a></li>
+		<li><a class="about" href="about/"><i data-feather="coffee"></i></a></li>
+	</ul>
+</nav>
 <div id="header">
-	<div class="container">
-		<nav>
-			<!-- <img src="./images/logo.png" class="logo"> -->
-			<ul>
-				<li><a class="shadow home activenav" href=""><i data-feather="droplet"></i></a></li>
-				<li><a class="shadow page1" onclick="open('page1/')"><i data-feather="layout"></i></a></li>
-				<li><a class="shadow page2" onclick="open('page2/')"><i data-feather="layout"></i></a></li>
-				<li><a class="shadow page3" onclick="open('page3/')"><i data-feather="layout"></i></a></li>
-				<li><a class="shadow page4" onclick="open('page4/')"><i data-feather="layout"></i></a></li>
-				<li><a class="shadow about" onclick="open('about/')"><i data-feather="coffee"></i></a></li>
-			</ul>
-		</nav>
-		<div class="shadow header-text">
-			<p>hello</p>
-			<h1>Hi, I'm <span>sbird</span> and I like to make all sorts of things!</h1>
-		</div>
-	</div>
+	<h3>hello</h3>
+	<h1>Hi, I'm <span>sbird</span> and I like to make all sorts of things!</h1>
 </div>
-<!--socials-->
-<div id="socials">
-	<div class="container">
-		<div class="socialsrow">
-			<div class="socials-col-1">
-				<h1 class="sub-title"><i data-feather="message-square"></i> Stuff</h1>
-				<p><i class="fa-solid fa-paper-plane"></i> socials@example.com</p>
-				<div class="social-icons">
-					<a onclick="openlink('https://github.com/swarbler/', true)"><i class="ri-github-fill"></i></a>
-					<a onclick="openlink('https://spenguin.itch.io/'), true"><i class="ri-gamepad-line"></i></a>
-				</div>
-			</div>
-			<div class="socials-col-2">
-				<img src="./images/stretchedUser.png" alt="something">
-			</div>
-		</div>
+<div id="social">
+	<h2><i data-feather="message-square"></i> Socials</h2>
+	<div class="icons">
+		<a href='https://github.com/swarbler/'><i class="ri-github-fill"></i></a>
+		<a href='https://spenguin.itch.io/'><i class="ri-gamepad-line"></i></a>
 	</div>
-<div class="createdby">
-	<p>Made with <i class="fa-solid fa-fish"></i> by samp</p>
+<div class="footer">
+	<p>Made with <i data-feather="cloud-lightning"></i> by sbird</p>
 </div>
 <script>
 	feather.replace();
-</script>
-<script>
-
-	var tablinks = document.getElementsByClassName("tab-links");
-	var tabcontents = document.getElementsByClassName("tab-contents");
-
-	function opentab(tabname){
-		for(tablink of tablinks){
-			tablink.classList.remove("active-link");
-		}
-		for(tabcontent of tabcontents){
-			tabcontent.classList.remove("active-tab");
-		}
-		event.currentTarget.classList.add("active-link");
-		document.getElementById(tabname).classList.add("active-tab");
-	}
-
-	var tablinks2 = document.getElementsByClassName("tab-links-2");
-	var tabcontents2 = document.getElementsByClassName("tab-contents-2");
-
-	function opentab2(tabname){
-		for(tablink2 of tablinks2){
-			tablink2.classList.remove("active-link-2");
-		}
-		for(tabcontent2 of tabcontents2){
-			tabcontent2.classList.remove("active-tab-2");
-		}
-		event.currentTarget.classList.add("active-link-2");
-		document.getElementById(tabname).classList.add("active-tab-2");
-	}
-
 </script>
 </body>
 </html>
