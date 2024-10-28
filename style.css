@@ -235,6 +235,10 @@ nav ul li a:hover::before{
 
 /* icons */
 
+.inline{
+	display: inline-block;
+}
+
 .icons{
 	margin-top: 15px;
 }
