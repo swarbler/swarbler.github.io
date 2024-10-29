@@ -212,6 +212,16 @@ nav ul li a:hover::before{
 	font-size: 16px;
 }
 
+/* txt */
+
+.txt{
+	padding: 15px;
+	transition: 0.5s;
+}
+.txt:hover{
+	transform: scale(1.1);
+}
+
 /* tabs */
 
 .tabs{
