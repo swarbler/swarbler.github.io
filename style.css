@@ -246,7 +246,7 @@ nav ul li a:hover::before{
 	border-radius: 15px;
 	filter: brightness(100%);
 }
-.tab:hover{
+.tab.float:hover{
 	rotate: -1 -1 -1 2deg;
 }
 
