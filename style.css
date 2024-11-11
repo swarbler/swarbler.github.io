@@ -210,8 +210,36 @@ nav ul li a:hover::before{
 }
 
 /* center */
+
 .center{
 	text-align: center;
+}
+
+/* images */
+
+.picture{
+	position: relative;
+	text-align: center;
+	color: #cdd8be;
+}
+.image{
+	width: 100%;
+	filter: brightness(50%);
+	border-radius: 25px;
+}
+.imagetxt h3{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 45px;
+}
+.imagetxt p{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
 }
 
 /* floats (lists + tabs + cards)*/
