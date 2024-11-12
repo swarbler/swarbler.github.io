@@ -264,6 +264,7 @@ nav ul li a:hover::before{
 .imagetxt.swipe.reverse p{
 	transform: translate(100%, -30%);
 }
+/* HOVER */
 .picture:hover{
 	padding-left: 0;
 	padding-right: 0;
@@ -272,6 +273,7 @@ nav ul li a:hover::before{
 	border-radius: 0;
 	filter: brightness(70%);
 }
+/* slide */
 .picture:hover .slide.right{
 	left: 75%;
 	text-align: right;
@@ -280,6 +282,7 @@ nav ul li a:hover::before{
 	left: 25%;
 	text-align: left;
 }
+/* pop */
 .picture:hover .imagetxt.pop h3{
 	font-size: 45px;
 }
@@ -292,6 +295,7 @@ nav ul li a:hover::before{
 .picture:hover .imagetxt.pop.reverse p{
 	font-size: 0;
 }
+/* swipe */
 .picture:hover .imagetxt.swipe h3{
 	transform: translate(-200%, -50%);
 }
@@ -303,6 +307,56 @@ nav ul li a:hover::before{
 }
 .picture:hover .imagetxt.swipe.reverse p{
 	transform: translate(-50%, -30%);
+}
+/* fly */
+.picture:hover .imagetxt.fly h3{
+	transform: translate(-50%, -300%);
+}
+.picture:hover .imagetxt.fly p{
+	transform: translate(-50%, 220%);
+}
+.picture:hover .imagetxt.fly.reverse h3{
+	transform: translate(-50%, 220%);
+}
+.picture:hover .imagetxt.fly.reverse p{
+	transform: translate(-50%, 180%);
+}
+/* plato */
+.picture:hover .imagetxt.plato.left{
+	left: 25%;
+	text-align: left;
+}
+.picture:hover .imagetxt.plato.right{
+	left: 75%;
+	text-align: right;
+}
+/* left top */
+.picture:hover .imagetxt.plato.left.top h3{
+	transform: translate(-50%, -250%);
+}
+.picture:hover .imagetxt.plato.left.top p{
+	transform: translate(-50%, -600%);
+}
+/* right top */
+.picture:hover .imagetxt.plato.right.top h3{
+	transform: translate(-50%, -250%);
+}
+.picture:hover .imagetxt.plato.right.top p{
+	transform: translate(-50%, -600%);
+}
+/* left bottom */
+.picture:hover .imagetxt.plato.left.bottom h3{
+	transform: translate(-50%, 150%);
+}
+.picture:hover .imagetxt.plato.left.bottom p{
+	transform: translate(-50%, 300%);
+}
+/* right bottom */
+.picture:hover .imagetxt.plato.right.bottom h3{
+	transform: translate(-50%, 150%);
+}
+.picture:hover .imagetxt.plato.right.bottom p{
+	transform: translate(-50%, 300%);
 }
 
 /* floats (lists + tabs + cards)*/
