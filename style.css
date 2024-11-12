@@ -258,6 +258,18 @@ nav ul li a:hover::before{
 .imagetxt.pop.reverse p{
 	font-size: 20px;
 }
+.imagetxt.fade h3{
+	filter: opacity(0);
+}
+.imagetxt.fade p{
+	filter: opacity(0);
+}
+.imagetxt.fade.reverse h3{
+	filter: opacity(100%);
+}
+.imagetxt.fade.reverse p{
+	filter: opacity(100%);
+}
 .imagetxt.swipe.reverse h3{
 	transform: translate(-200%, -50%);
 }
@@ -294,6 +306,19 @@ nav ul li a:hover::before{
 }
 .picture:hover .imagetxt.pop.reverse p{
 	font-size: 0;
+}
+/* fade */
+.picture:hover .imagetxt.fade h3{
+	filter: opacity(100%);
+}
+.picture:hover .imagetxt.fade p{
+	filter: opacity(100%);
+}
+.picture:hover .imagetxt.fade.reverse h3{
+	filter: opacity(0);
+}
+.picture:hover .imagetxt.fade.reverse p{
+	filter: opacity(0);
 }
 /* swipe */
 .picture:hover .imagetxt.swipe h3{
