@@ -271,10 +271,12 @@ nav ul li a:hover::before{
 	filter: opacity(100%);
 }
 .imagetxt.swipe.reverse h3{
-	transform: translate(-200%, -50%);
+	transform: translate(-150%, -50%);
+	text-align: left;
 }
 .imagetxt.swipe.reverse p{
-	transform: translate(100%, -30%);
+	transform: translate(50%, -30%);
+	text-align: right;
 }
 /* HOVER */
 .picture:hover{
@@ -322,16 +324,20 @@ nav ul li a:hover::before{
 }
 /* swipe */
 .picture:hover .imagetxt.swipe h3{
-	transform: translate(-200%, -50%);
+	transform: translate(-150%, -50%);
+	text-align: left;
 }
 .picture:hover .imagetxt.swipe p{
-	transform: translate(100%, -30%);
+	transform: translate(50%, -30%);
+	text-align: right;
 }
 .picture:hover .imagetxt.swipe.reverse h3{
 	transform: translate(-50%, -50%);
+	text-align: center;
 }
 .picture:hover .imagetxt.swipe.reverse p{
 	transform: translate(-50%, -30%);
+	text-align: center;
 }
 /* fly */
 .picture:hover .imagetxt.fly h3{
