@@ -358,7 +358,7 @@ nav ul li a:hover::before{
 	text-align: left;
 }
 .picture:hover .imagetxt.plato.right{
-	left: 75%;
+	left: 60%;
 	text-align: right;
 }
 /* left top */
