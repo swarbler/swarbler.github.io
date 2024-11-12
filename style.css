@@ -219,27 +219,90 @@ nav ul li a:hover::before{
 
 .picture{
 	position: relative;
-	text-align: center;
 	color: #cdd8be;
+	transition: 0.5s;
 }
 .image{
 	width: 100%;
 	filter: brightness(50%);
 	border-radius: 25px;
+	transition: 0.5s;
+}
+.imagetxt{
+	font-family: 'garet';
+	position: absolute;
+	transition: 0.75s;
+	top: 50%;
+	left: 50%;
+	text-align: center;
 }
 .imagetxt h3{
-	position: absolute;
-	top: 50%;
-	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 45px;
+	transition: 0.75s;
 }
 .imagetxt p{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -30%);
 	font-size: 20px;
+	transition: 0.75s;
+}
+.imagetxt.pop h3{
+	font-size: 0;
+}
+.imagetxt.pop p{
+	font-size: 0;
+}
+.imagetxt.pop.reverse h3{
+	font-size: 45px;
+}
+.imagetxt.pop.reverse p{
+	font-size: 20px;
+}
+.imagetxt.swipe.reverse h3{
+	transform: translate(-200%, -50%);
+}
+.imagetxt.swipe.reverse p{
+	transform: translate(100%, -30%);
+}
+.picture:hover{
+	padding-left: 0;
+	padding-right: 0;
+}
+.picture:hover .image{
+	border-radius: 0;
+	filter: brightness(70%);
+}
+.picture:hover .slide.right{
+	left: 75%;
+	text-align: right;
+}
+.picture:hover .slide.left{
+	left: 25%;
+	text-align: left;
+}
+.picture:hover .imagetxt.pop h3{
+	font-size: 45px;
+}
+.picture:hover .imagetxt.pop p{
+	font-size: 20px;
+}
+.picture:hover .imagetxt.pop.reverse h3{
+	font-size: 0;
+}
+.picture:hover .imagetxt.pop.reverse p{
+	font-size: 0;
+}
+.picture:hover .imagetxt.swipe h3{
+	transform: translate(-200%, -50%);
+}
+.picture:hover .imagetxt.swipe p{
+	transform: translate(100%, -30%);
+}
+.picture:hover .imagetxt.swipe.reverse h3{
+	transform: translate(-50%, -50%);
+}
+.picture:hover .imagetxt.swipe.reverse p{
+	transform: translate(-50%, -30%);
 }
 
 /* floats (lists + tabs + cards)*/
