@@ -390,6 +390,106 @@ nav ul li a:hover::before{
 	transform: translate(-50%, 300%);
 }
 
+/* words */
+
+.words{
+	align-items: center;
+}
+.words .word{
+	font-size: 50px;
+	font-family: 'sansation';
+	transform: translate(0, 0);
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.words .word.right{
+	transition: 0.6s;
+}
+.words .word.left{
+	transition: 0.8s;
+}
+.words .word.w1 h3{
+	transition: 0.6s;
+}
+.words .word.w2 h3{
+	transition: 0.8s;
+}
+.words .word.w3 h3{
+	transition: 1.0s;
+}
+.words .word.w4 h3{
+	transition: 2.0s;
+}
+.words .word.w5 h3{
+	transition: 1.0s;
+}
+.words .word.w6 h3{
+	transition: 1.5s;
+}
+.words .word.w7 h3{
+	transition: 1.0s;
+}
+.words .word.w8 h3{
+	transition: 3.0s;
+}
+.words .word.w9 h3{
+	transition: 5s;
+}
+.words .right:hover{
+	transform: translate(10%, 0);
+}
+.words .left:hover{
+	transform: translate(-10%, 0);
+}
+.words .word:hover h3{
+	font-size: 60px;
+}
+.words .word.w1:hover h3{
+	color: #595e88;
+	rotate: 30deg;
+}
+.words .word.w2:hover h3{
+	color: #8f5a5a;
+	rotate: 180deg;
+	letter-spacing: 20px;
+}
+.words .word.w3:hover h3{
+	color: #774a71;
+	rotate: -1515deg;
+	letter-spacing: 10px;
+}
+.words .word.w4:hover h3{
+	color: #4b9185;
+	rotate: -50deg;
+	letter-spacing: 30px;
+}
+.words .word.w5:hover h3{
+	color: #735a8f;
+	rotate: 2222deg;
+	letter-spacing: 25px;
+}
+.words .word.w6:hover h3{
+	color: #a18d4a;
+	rotate: -111deg;
+	letter-spacing: 12px;
+}
+.words .word.w7:hover h3{
+	color: #4b9185;
+	rotate: -1234deg;
+	letter-spacing: 15px;
+}
+.words .word.w8:hover h3{
+	color: #735a8f;
+	rotate: 123456deg;
+	letter-spacing: 30px;
+}
+.words .word.w9:hover h3{
+	color: #a18d4a;
+	rotate: 88888888deg;
+	letter-spacing: 50px;
+}
+
 /* floats (lists + tabs + cards)*/
 
 .float{
