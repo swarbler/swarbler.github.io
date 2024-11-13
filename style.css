@@ -246,6 +246,7 @@ nav ul li a:hover::before{
 	font-size: 20px;
 	transition: 0.75s;
 }
+/* pop */
 .imagetxt.pop h3{
 	font-size: 0;
 }
@@ -258,6 +259,7 @@ nav ul li a:hover::before{
 .imagetxt.pop.reverse p{
 	font-size: 20px;
 }
+/* fade */
 .imagetxt.fade h3{
 	filter: opacity(0);
 }
@@ -270,6 +272,7 @@ nav ul li a:hover::before{
 .imagetxt.fade.reverse p{
 	filter: opacity(100%);
 }
+/* swipe */
 .imagetxt.swipe.reverse h3{
 	transform: translate(-150%, -50%);
 	text-align: left;
@@ -436,6 +439,7 @@ nav ul li a:hover::before{
 .words .word.w9 h3{
 	transition: 5s;
 }
+/* HOVER */
 .words .right:hover{
 	transform: translate(10%, 0);
 }
