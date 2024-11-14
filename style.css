@@ -43,6 +43,11 @@ body{
 	color: #5b7555;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* nav bar */
 
 nav{
@@ -391,6 +396,42 @@ nav ul li a:hover::before{
 }
 .picture:hover .imagetxt.plato.right.bottom p{
 	transform: translate(-50%, 300%);
+}
+
+/* multipicture */
+
+.multipicture{
+	padding-left: 0;
+	padding-right: 0;
+}
+.multipicture .slide1{
+	transform: translate(-50%, 0);
+	width: 100%;
+	transition: 0.5s;
+	filter: brightness(30%);
+	position: absolute;
+	z-index: 0;
+}
+.multipicture .slide2{
+	transform: translate(50%, 0);
+	width: 100%;
+	transition: 0.5s;
+	filter: brightness(30%);
+	z-index: 0;
+}
+.multipicture .slide1:hover{
+	transform: translate(0, 0);
+	left: 0;
+	border-radius: 0;
+	filter: brightness(85%);
+	z-index: 3;
+}
+.multipicture .slide2:hover{
+	transform: translate(0, 0);
+	left: -100%;
+	border-radius: 0;
+	filter: brightness(85%);
+	z-index: 3;
 }
 
 /* words */
