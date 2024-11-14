@@ -27,11 +27,18 @@
 
 /* animations */
 
-@keyframes cycle {
+@keyframes glow {
 	0%		{filter: brightness(100%);}
 	25%		{filter: brightness(100%);}
 	50%		{filter: brightness(30%);}
 	100%	{filter: brightness(30%);}
+}
+
+@keyframes fuzzy {
+	0%		{filter: blur(0);}
+	25%		{filter: blur(0);}
+	50%		{filter: blur(15px);}
+	100%	{filter: blur(15px);}
 }
 
 /* general */
@@ -401,8 +408,6 @@ nav ul li a:hover::before{
 .multipicture .cycle3,
 .multipicture .cycle4{
 	width: 50%;
-	filter: brightness(30%);
-	animation-name: cycle;
 	animation-duration: 2s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
@@ -415,6 +420,20 @@ nav ul li a:hover::before{
 }
 .multipicture .cycle4{
 	animation-delay: 1.5s;
+}
+.multipicture.glow .cycle1,
+.multipicture.glow .cycle2,
+.multipicture.glow .cycle3,
+.multipicture.glow .cycle4{
+	filter: brightness(30%);
+	animation-name: glow;
+}
+.multipicture.fuzzy .cycle1,
+.multipicture.fuzzy .cycle2,
+.multipicture.fuzzy .cycle3,
+.multipicture.fuzzy .cycle4{
+	filter: blur(15px);
+	animation-name: fuzzy;
 }
 /* slide */
 .multipicture .slide1, 
