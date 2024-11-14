@@ -513,9 +513,6 @@ nav ul li a:hover::before{font-size: 14px;}
 	color: #92ad8d;
 	transition: 0.5s;
 }
-.footer .feather{
-	color: #b6b590;
-	transition: transform 0.5s, margin 0.5s, color 1.2s;
-}
+.footer .feather{color: #b6b590; transition: transform 0.5s, margin 0.5s, color 1.2s;}
 .footer:hover{font-size: 24px;}
 .footer:hover .feather{transform: scale(1.5); margin: 0 12px; color: #a1b474;}
