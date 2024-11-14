@@ -91,9 +91,7 @@ nav ul li{
 	margin: 10px 10px;
 	transition: 0.8s;
 }
-nav ul li:hover{
-	transform: scale(1.3);
-}
+nav ul li:hover{transform: scale(1.3);}
 nav ul li a{
 	color: #86a17b;
 	text-decoration: none;
@@ -101,9 +99,7 @@ nav ul li a{
 	position: relative;
 	transition: 0.5s;
 }
-.activenav{
-	color: #61885a;
-}
+.activenav{color: #61885a;}
 
 /* nav bar line effect */
 nav ul li a::after{
@@ -116,14 +112,8 @@ nav ul li a::after{
 	bottom: 3px;
 	transition: 0.5s;
 }
-nav ul li a:hover::after{
-	/* creates line when hovered */
-	width: 90%;
-}
-.activenav:hover::after{
-	/* activenav does not have line effect */
-	width: 0%; 
-}
+nav ul li a:hover::after{width: 90%;}
+.activenav:hover::after{width: 0%;}
 
 /* nav bar text effect */
 nav ul li a::before{
@@ -138,27 +128,13 @@ nav ul li a:hover::before{
 	/* creates text effect when hovered */
 	font-size: 14px;
 }
-.home::before{
-	content: 'Home';
-}
-.page1::before{
-	content: 'Page1';
-}
-.page2::before{
-	content: 'Page2';
-}
-.page3::before{
-	content: 'Page3';
-}
-.page4::before{
-	content: 'Page4';
-}
-.about::before{
-	content: 'About';
-}
-.example::before{
-	content: 'example';
-}
+.home::before{content: 'Home';}
+.page1::before{content: 'Page1';}
+.page2::before{content: 'Page2';}
+.page3::before{content: 'Page3';}
+.page4::before{content: 'Page4';}
+.about::before{content: 'About';}
+.example::before{content: 'example';}
 .activenav:hover::before{
 	/* activenav does not have text effect */
 	font-size: 0;
@@ -198,17 +174,22 @@ nav ul li a:hover::before{
 .section{
 	padding: 50px;
 }
-.section h2{
+.section h2,
+.bx-section h2{
 	font-size: 28px;
 	transition: 0.8s;
 }
-.section h2 .feather{
+.section h2 .feather,
+.bx-section h2 .feather{
 	transition: transform 0.8s, margin-right 0.3s;
 }
-.section h2:hover{
+.section h2:hover,
+.bx-section h2:hover{
 	font-size: 32px;
 }
-.section h2:hover .feather{
+.section h2:hover .feather,
+.bx-section h2:hover .feather
+{
 	transform: scale(1.5);
 	margin-right: 10px;
 }
@@ -230,25 +211,11 @@ nav ul li a:hover::before{
 .bx-section h2{
 	margin-top: 15px;
 	margin-left: 10px;
-	font-size: 28px;
-	transition: 0.8s;
-}
-.bx-section h2 .feather{
-	transition: transform 0.8s, margin-right 0.3s;
-}
-.bx-section h2:hover{
-	font-size: 32px;
-}
-.bx-section h2:hover .feather{
-	transform: scale(1.5);
-	margin-right: 10px;
 }
 
 /* center */
 
-.center{
-	text-align: center;
-}
+.center{text-align: center;}
 
 /* images */
 
@@ -272,111 +239,49 @@ nav ul li a:hover::before{
 	text-align: center;
 }
 .imagetxt h3, 
-.imagetxt p{
-	transform: translate(-50%, -50%);
-	transition: 0.75s;
-}
-.imagetxt h3{
-	font-size: 45px;
-}
-.imagetxt p{
-	font-size: 20px;
-}
+.imagetxt p{transform: translate(-50%, -50%); transition: 0.75s;}
+.imagetxt h3{font-size: 45px;}
+.imagetxt p{font-size: 20px;}
 /* pop */
 .imagetxt.pop h3, 
-.imagetxt.pop p{
-	font-size: 0;
-}
-.imagetxt.pop.reverse h3{
-	font-size: 45px;
-}
-.imagetxt.pop.reverse p{
-	font-size: 20px;
-}
+.imagetxt.pop p{font-size: 0;}
+.imagetxt.pop.reverse h3{font-size: 45px;}
+.imagetxt.pop.reverse p{font-size: 20px;}
 /* fade */
 .imagetxt.fade h3, 
-.imagetxt.fade p{
-	filter: opacity(0);
-}
+.imagetxt.fade p{filter: opacity(0);}
 .imagetxt.fade.reverse h3, 
-.imagetxt.fade.reverse p{
-	filter: opacity(100%);
-}
+.imagetxt.fade.reverse p{filter: opacity(100%);}
 /* swipe */
-.imagetxt.swipe.reverse h3{
-	transform: translate(-150%, -50%);
-	text-align: left;
-}
-.imagetxt.swipe.reverse p{
-	transform: translate(50%, -30%);
-	text-align: right;
-}
+.imagetxt.swipe.reverse h3{transform: translate(-150%, -50%); text-align: left;}
+.imagetxt.swipe.reverse p{transform: translate(50%, -30%); text-align: right;}
 /* HOVER */
-.picture:hover{
-	padding-left: 0;
-	padding-right: 0;
-}
-.picture:hover .image{
-	border-radius: 0;
-	filter: brightness(70%);
-}
+.picture:hover{padding-left: 0; padding-right: 0;}
+.picture:hover .image{border-radius: 0; filter: brightness(70%);}
 /* slide */
-.picture:hover .slide.right{
-	left: 75%;
-	text-align: right;
-}
-.picture:hover .slide.left{
-	left: 25%;
-	text-align: left;
-}
+.picture:hover .slide.right{left: 75%; text-align: right;}
+.picture:hover .slide.left{left: 25%; text-align: left;}
 /* pop */
-.picture:hover .imagetxt.pop h3{
-	font-size: 45px;
-}
-.picture:hover .imagetxt.pop p{
-	font-size: 20px;
-}
+.picture:hover .imagetxt.pop h3{font-size: 45px;}
+.picture:hover .imagetxt.pop p{font-size: 20px;}
 .picture:hover .imagetxt.pop.reverse h3, 
-.picture:hover .imagetxt.pop.reverse p{
-	font-size: 0;
-}
+.picture:hover .imagetxt.pop.reverse p{font-size: 0;}
 /* fade */
 .picture:hover .imagetxt.fade h3, 
-.picture:hover .imagetxt.fade p{
-	filter: opacity(100%);
-}
+.picture:hover .imagetxt.fade p{filter: opacity(100%);}
 .picture:hover .imagetxt.fade.reverse h3, 
-.picture:hover .imagetxt.fade.reverse p{
-	filter: opacity(0);
-}
+.picture:hover .imagetxt.fade.reverse p{filter: opacity(0);}
 /* swipe */
-.picture:hover .imagetxt.swipe h3{
-	transform: translate(-150%, -50%);
-	text-align: left;
+.picture:hover .imagetxt.swipe h3{transform: translate(-150%, -50%); text-align: left;}
+.picture:hover .imagetxt.swipe p{transform: translate(50%, -30%); text-align: right;}
+.picture:hover .imagetxt.swipe.reverse h3{transform: translate(-50%, -50%); text-align: center;
 }
-.picture:hover .imagetxt.swipe p{
-	transform: translate(50%, -30%);
-	text-align: right;
-}
-.picture:hover .imagetxt.swipe.reverse h3{
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
-.picture:hover .imagetxt.swipe.reverse p{
-	transform: translate(-50%, -30%);
-	text-align: center;
-}
+.picture:hover .imagetxt.swipe.reverse p{transform: translate(-50%, -30%); text-align: center;}
 /* fly */
-.picture:hover .imagetxt.fly h3{
-	transform: translate(-50%, -300%);
-}
+.picture:hover .imagetxt.fly h3{transform: translate(-50%, -300%);}
 .picture:hover .imagetxt.fly p, 
-.picture:hover .imagetxt.fly.reverse h3{
-	transform: translate(-50%, 220%);
-}
-.picture:hover .imagetxt.fly.reverse p{
-	transform: translate(-50%, 180%);
-}
+.picture:hover .imagetxt.fly.reverse h3{transform: translate(-50%, 220%);}
+.picture:hover .imagetxt.fly.reverse p{transform: translate(-50%, 180%);}
 /* plato */
 .picture:hover .imagetxt.plato.left{
 	left: 25%;
@@ -426,15 +331,9 @@ nav ul li a:hover::before{
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
-.multipicture .cycle2{
-	animation-delay: 0.5s;
-}
-.multipicture .cycle3{
-	animation-delay: 1s;
-}
-.multipicture .cycle4{
-	animation-delay: 1.5s;
-}
+.multipicture .cycle2{animation-delay: 0.5s;}
+.multipicture .cycle3{animation-delay: 1s;}
+.multipicture .cycle4{animation-delay: 1.5s;}
 .multipicture.glow .cycle1,
 .multipicture.glow .cycle2,
 .multipicture.glow .cycle3,
@@ -471,13 +370,8 @@ nav ul li a:hover::before{
 	filter: brightness(30%);
 	z-index: 0;
 }
-.multipicture .slide1{
-	transform: translate(-50%, 0);
-	position: absolute;
-}
-.multipicture .slide2{
-	transform: translate(50%, 0);
-}
+.multipicture .slide1{transform: translate(-50%, 0); position: absolute;}
+.multipicture .slide2{transform: translate(50%, 0);}
 .multipicture .slide1:hover, 
 .multipicture .slide2:hover{
 	transform: translate(0, 0);
@@ -503,21 +397,10 @@ nav ul li a:hover::before{
 	border-radius: 20px;
 	position: absolute;
 }
-.multipicture .swipe2{
-	transform: translate(-30%, 0);
-	position: absolute;
-}
-.multipicture .swipe3{
-	transform: translate(-50%, 0);
-	position: absolute;
-}
-.multipicture .swipe4{
-	transform: translate(-70%, 0);
-	position: absolute;
-}
-.multipicture .swipe5{
-	transform: translate(-90%, 0);
-}
+.multipicture .swipe2{transform: translate(-30%, 0); position: absolute;}
+.multipicture .swipe3{transform: translate(-50%, 0); position: absolute;}
+.multipicture .swipe4{transform: translate(-70%, 0); position: absolute;}
+.multipicture .swipe5{transform: translate(-90%, 0);}
 .multipicture .swipe1:hover, 
 .multipicture .swipe2:hover, 
 .multipicture .swipe3:hover,
