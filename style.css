@@ -27,9 +27,9 @@
 
 /* animations */
 
-@keyframes corner {
+@keyframes cycle {
 	0%		{filter: brightness(100%);}
-	25%		{filter: brightness(30%);}
+	25%		{filter: brightness(50%);}
 	50%		{filter: brightness(30%);}
 	100%	{filter: brightness(30%);}
 }
@@ -389,28 +389,32 @@ nav ul li a:hover::before{
 .multipicture{
 	padding-left: 0;
 	padding-right: 0;
+	margin-left: 0;
+	margin-right: 0;
 }
-/* corner */
-.multipicture .corner1,
-.multipicture .corner2,
-.multipicture .corner3,
-.multipicture .corner4{
+/* cycle */
+.multipicture.cycles{
+	display: flex;
+}
+.multipicture .cycle1,
+.multipicture .cycle2,
+.multipicture .cycle3,
+.multipicture .cycle4{
 	width: 50%;
 	filter: brightness(30%);
-	animation-name: corner;
-	animation-duration: 5s;
+	animation-name: cycle;
+	animation-duration: 2s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-	transition: 0.5s;
 }
-.multipicture .corner2{
-	animation-delay: 1.25s;
+.multipicture .cycle2{
+	animation-delay: 0.5s;
 }
-.multipicture .corner3{
-	animation-delay: 2.5s;
+.multipicture .cycle3{
+	animation-delay: 1s;
 }
-.multipicture .corner4{
-	animation-delay: 3.75s;
+.multipicture .cycle4{
+	animation-delay: 1.5s;
 }
 /* slide */
 .multipicture .slide1, 
