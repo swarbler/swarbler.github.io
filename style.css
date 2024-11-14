@@ -241,21 +241,18 @@ nav ul li a:hover::before{
 	left: 50%;
 	text-align: center;
 }
-.imagetxt h3{
+.imagetxt h3, .imagetxt p{
 	transform: translate(-50%, -50%);
-	font-size: 45px;
 	transition: 0.75s;
+}
+.imagetxt h3{
+	font-size: 45px;
 }
 .imagetxt p{
-	transform: translate(-50%, -30%);
 	font-size: 20px;
-	transition: 0.75s;
 }
 /* pop */
-.imagetxt.pop h3{
-	font-size: 0;
-}
-.imagetxt.pop p{
+.imagetxt.pop h3, .imagetxt.pop p{
 	font-size: 0;
 }
 .imagetxt.pop.reverse h3{
@@ -265,16 +262,10 @@ nav ul li a:hover::before{
 	font-size: 20px;
 }
 /* fade */
-.imagetxt.fade h3{
+.imagetxt.fade h3, .imagetxt.fade p{
 	filter: opacity(0);
 }
-.imagetxt.fade p{
-	filter: opacity(0);
-}
-.imagetxt.fade.reverse h3{
-	filter: opacity(100%);
-}
-.imagetxt.fade.reverse p{
+.imagetxt.fade.reverse h3, p{
 	filter: opacity(100%);
 }
 /* swipe */
@@ -311,23 +302,14 @@ nav ul li a:hover::before{
 .picture:hover .imagetxt.pop p{
 	font-size: 20px;
 }
-.picture:hover .imagetxt.pop.reverse h3{
-	font-size: 0;
-}
-.picture:hover .imagetxt.pop.reverse p{
+.picture:hover .imagetxt.pop.reverse h3, .picture:hover .imagetxt.pop.reverse p{
 	font-size: 0;
 }
 /* fade */
-.picture:hover .imagetxt.fade h3{
+.picture:hover .imagetxt.fade h3, .picture:hover .imagetxt.fade p{
 	filter: opacity(100%);
 }
-.picture:hover .imagetxt.fade p{
-	filter: opacity(100%);
-}
-.picture:hover .imagetxt.fade.reverse h3{
-	filter: opacity(0);
-}
-.picture:hover .imagetxt.fade.reverse p{
+.picture:hover .imagetxt.fade.reverse h3, .picture:hover .imagetxt.fade.reverse p{
 	filter: opacity(0);
 }
 /* swipe */
@@ -351,10 +333,7 @@ nav ul li a:hover::before{
 .picture:hover .imagetxt.fly h3{
 	transform: translate(-50%, -300%);
 }
-.picture:hover .imagetxt.fly p{
-	transform: translate(-50%, 220%);
-}
-.picture:hover .imagetxt.fly.reverse h3{
+.picture:hover .imagetxt.fly p, .picture:hover .imagetxt.fly.reverse h3{
 	transform: translate(-50%, 220%);
 }
 .picture:hover .imagetxt.fly.reverse p{
@@ -369,32 +348,18 @@ nav ul li a:hover::before{
 	left: 60%;
 	text-align: right;
 }
-/* left top */
-.picture:hover .imagetxt.plato.left.top h3{
+/* top */
+.picture:hover .imagetxt.plato.left.top h3, .picture:hover .imagetxt.plato.right.top h3{
 	transform: translate(-50%, -250%);
 }
-.picture:hover .imagetxt.plato.left.top p{
+.picture:hover .imagetxt.plato.left.top p, .picture:hover .imagetxt.plato.right.top p{
 	transform: translate(-50%, -600%);
 }
-/* right top */
-.picture:hover .imagetxt.plato.right.top h3{
-	transform: translate(-50%, -250%);
-}
-.picture:hover .imagetxt.plato.right.top p{
-	transform: translate(-50%, -600%);
-}
-/* left bottom */
-.picture:hover .imagetxt.plato.left.bottom h3{
+/* bottom */
+.picture:hover .imagetxt.plato.left.bottom h3, .picture:hover .imagetxt.plato.right.bottom h3{
 	transform: translate(-50%, 150%);
 }
-.picture:hover .imagetxt.plato.left.bottom p{
-	transform: translate(-50%, 300%);
-}
-/* right bottom */
-.picture:hover .imagetxt.plato.right.bottom h3{
-	transform: translate(-50%, 150%);
-}
-.picture:hover .imagetxt.plato.right.bottom p{
+.picture:hover .imagetxt.plato.left.bottom p, .picture:hover .imagetxt.plato.right.bottom p{
 	transform: translate(-50%, 300%);
 }
 
@@ -404,31 +369,22 @@ nav ul li a:hover::before{
 	padding-left: 0;
 	padding-right: 0;
 }
-.multipicture .slide1{
-	transform: translate(-50%, 0);
+.multipicture .slide1, .multipicture .slide2{
 	width: 100%;
 	transition: 0.5s;
 	filter: brightness(30%);
-	position: absolute;
 	z-index: 0;
+}
+.multipicture .slide1{
+	transform: translate(-50%, 0);
+	position: absolute;
 }
 .multipicture .slide2{
 	transform: translate(50%, 0);
-	width: 100%;
-	transition: 0.5s;
-	filter: brightness(30%);
-	z-index: 0;
 }
-.multipicture .slide1:hover{
+.multipicture .slide1:hover, .multipicture .slide2:hover{
 	transform: translate(0, 0);
 	left: 0;
-	border-radius: 0;
-	filter: brightness(85%);
-	z-index: 3;
-}
-.multipicture .slide2:hover{
-	transform: translate(0, 0);
-	left: -100%;
 	border-radius: 0;
 	filter: brightness(85%);
 	z-index: 3;
