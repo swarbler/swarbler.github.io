@@ -241,7 +241,8 @@ nav ul li a:hover::before{
 	left: 50%;
 	text-align: center;
 }
-.imagetxt h3, .imagetxt p{
+.imagetxt h3, 
+.imagetxt p{
 	transform: translate(-50%, -50%);
 	transition: 0.75s;
 }
@@ -252,7 +253,8 @@ nav ul li a:hover::before{
 	font-size: 20px;
 }
 /* pop */
-.imagetxt.pop h3, .imagetxt.pop p{
+.imagetxt.pop h3, 
+.imagetxt.pop p{
 	font-size: 0;
 }
 .imagetxt.pop.reverse h3{
@@ -262,10 +264,12 @@ nav ul li a:hover::before{
 	font-size: 20px;
 }
 /* fade */
-.imagetxt.fade h3, .imagetxt.fade p{
+.imagetxt.fade h3, 
+.imagetxt.fade p{
 	filter: opacity(0);
 }
-.imagetxt.fade.reverse h3, .imagetxt.fade.reverse p{
+.imagetxt.fade.reverse h3, 
+.imagetxt.fade.reverse p{
 	filter: opacity(100%);
 }
 /* swipe */
@@ -302,14 +306,17 @@ nav ul li a:hover::before{
 .picture:hover .imagetxt.pop p{
 	font-size: 20px;
 }
-.picture:hover .imagetxt.pop.reverse h3, .picture:hover .imagetxt.pop.reverse p{
+.picture:hover .imagetxt.pop.reverse h3, 
+.picture:hover .imagetxt.pop.reverse p{
 	font-size: 0;
 }
 /* fade */
-.picture:hover .imagetxt.fade h3, .picture:hover .imagetxt.fade p{
+.picture:hover .imagetxt.fade h3, 
+.picture:hover .imagetxt.fade p{
 	filter: opacity(100%);
 }
-.picture:hover .imagetxt.fade.reverse h3, .picture:hover .imagetxt.fade.reverse p{
+.picture:hover .imagetxt.fade.reverse h3, 
+.picture:hover .imagetxt.fade.reverse p{
 	filter: opacity(0);
 }
 /* swipe */
@@ -333,7 +340,8 @@ nav ul li a:hover::before{
 .picture:hover .imagetxt.fly h3{
 	transform: translate(-50%, -300%);
 }
-.picture:hover .imagetxt.fly p, .picture:hover .imagetxt.fly.reverse h3{
+.picture:hover .imagetxt.fly p, 
+.picture:hover .imagetxt.fly.reverse h3{
 	transform: translate(-50%, 220%);
 }
 .picture:hover .imagetxt.fly.reverse p{
@@ -349,17 +357,21 @@ nav ul li a:hover::before{
 	text-align: right;
 }
 /* top */
-.picture:hover .imagetxt.plato.left.top h3, .picture:hover .imagetxt.plato.right.top h3{
+.picture:hover .imagetxt.plato.left.top h3, 
+.picture:hover .imagetxt.plato.right.top h3{
 	transform: translate(-50%, -250%);
 }
-.picture:hover .imagetxt.plato.left.top p, .picture:hover .imagetxt.plato.right.top p{
+.picture:hover .imagetxt.plato.left.top p, 
+.picture:hover .imagetxt.plato.right.top p{
 	transform: translate(-50%, -600%);
 }
 /* bottom */
-.picture:hover .imagetxt.plato.left.bottom h3, .picture:hover .imagetxt.plato.right.bottom h3{
+.picture:hover .imagetxt.plato.left.bottom h3, 
+.picture:hover .imagetxt.plato.right.bottom h3{
 	transform: translate(-50%, 150%);
 }
-.picture:hover .imagetxt.plato.left.bottom p, .picture:hover .imagetxt.plato.right.bottom p{
+.picture:hover .imagetxt.plato.left.bottom p, 
+.picture:hover .imagetxt.plato.right.bottom p{
 	transform: translate(-50%, 300%);
 }
 
@@ -369,7 +381,9 @@ nav ul li a:hover::before{
 	padding-left: 0;
 	padding-right: 0;
 }
-.multipicture .slide1, .multipicture .slide2{
+/* slide */
+.multipicture .slide1, 
+.multipicture .slide2{
 	width: 100%;
 	transition: 0.5s;
 	filter: brightness(30%);
@@ -382,10 +396,54 @@ nav ul li a:hover::before{
 .multipicture .slide2{
 	transform: translate(50%, 0);
 }
-.multipicture .slide1:hover, .multipicture .slide2:hover{
+.multipicture .slide1:hover, 
+.multipicture .slide2:hover{
 	transform: translate(0, 0);
 	left: 0;
 	border-radius: 0;
+	filter: brightness(85%);
+	z-index: 3;
+}
+/* swipe */
+.multipicture .swipe1, 
+.multipicture .swipe2, 
+.multipicture .swipe3, 
+.multipicture .swipe4, 
+.multipicture .swipe5{
+	width: 90%;
+	transition: 0.8s;
+	border-radius: 0;
+	filter: brightness(30%);
+	z-index: 0;
+}
+.multipicture .swipe1{
+	transform: translate(-10%, 0);
+	border-radius: 20px;
+	position: absolute;
+}
+.multipicture .swipe2{
+	transform: translate(-30%, 0);
+	position: absolute;
+}
+.multipicture .swipe3{
+	transform: translate(-50%, 0);
+	position: absolute;
+}
+.multipicture .swipe4{
+	transform: translate(-70%, 0);
+	position: absolute;
+}
+.multipicture .swipe5{
+	transform: translate(-90%, 0);
+}
+.multipicture .swipe1:hover, 
+.multipicture .swipe2:hover, 
+.multipicture .swipe3:hover,
+.multipicture .swipe4:hover, 
+.multipicture .swipe5:hover{
+	transform: translate(-1%, 0);
+	left: 0;
+	border-radius: 20px;
 	filter: brightness(85%);
 	z-index: 3;
 }
