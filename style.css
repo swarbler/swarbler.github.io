@@ -25,6 +25,15 @@
 	font-weight: bold;
 }
 
+/* animations */
+
+@keyframes corner {
+	0%		{filter: brightness(100%);}
+	25%		{filter: brightness(30%);}
+	50%		{filter: brightness(30%);}
+	100%	{filter: brightness(30%);}
+}
+
 /* general */
 
 *{
@@ -381,6 +390,28 @@ nav ul li a:hover::before{
 	padding-left: 0;
 	padding-right: 0;
 }
+/* corner */
+.multipicture .corner1,
+.multipicture .corner2,
+.multipicture .corner3,
+.multipicture .corner4{
+	width: 50%;
+	filter: brightness(30%);
+	animation-name: corner;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	transition: 0.5s;
+}
+.multipicture .corner2{
+	animation-delay: 1.25s;
+}
+.multipicture .corner3{
+	animation-delay: 2.5s;
+}
+.multipicture .corner4{
+	animation-delay: 3.75s;
+}
 /* slide */
 .multipicture .slide1, 
 .multipicture .slide2{
@@ -439,7 +470,7 @@ nav ul li a:hover::before{
 .multipicture .swipe1:hover, 
 .multipicture .swipe2:hover, 
 .multipicture .swipe3:hover,
-.multipicture .swipe4:hover, 
+.multipicture .swipe4:hover,
 .multipicture .swipe5:hover{
 	transform: translate(-1%, 0);
 	left: 0;
