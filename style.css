@@ -265,7 +265,7 @@ nav ul li a:hover::before{
 .imagetxt.fade h3, .imagetxt.fade p{
 	filter: opacity(0);
 }
-.imagetxt.fade.reverse h3, p{
+.imagetxt.fade.reverse h3, .imagetxt.fade.reverse p{
 	filter: opacity(100%);
 }
 /* swipe */
