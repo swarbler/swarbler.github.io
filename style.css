@@ -157,7 +157,7 @@ nav ul li a:hover::before{
 	content: 'About';
 }
 .example::before{
-	content: 'About';
+	content: 'example';
 }
 .activenav:hover::before{
 	/* activenav does not have text effect */
