@@ -45,6 +45,12 @@
 	50%		{filter: grayscale(80%);}
 	100%	{filter: grayscale(80%);}
 }
+@keyframes scroll {
+	0%		{filter: sepia(0)}
+	25%		{filter: sepia(0);}
+	50%		{filter: sepia(100%);}
+	100%	{filter: sepia(100%);}
+}
 
 /* general */
 
@@ -446,6 +452,13 @@ nav ul li a:hover::before{
 .multipicture.paint .cycle4{
 	filter: grayscale(80%);
 	animation-name: paint;
+}
+.multipicture.scroll .cycle1,
+.multipicture.scroll .cycle2,
+.multipicture.scroll .cycle3,
+.multipicture.scroll .cycle4{
+	filter: sepia(100%);
+	animation-name: scroll;
 }
 /* slide */
 .multipicture .slide1, 
