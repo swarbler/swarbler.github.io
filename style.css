@@ -446,7 +446,6 @@ nav ul li a:hover::before{font-size: 14px;}
 }
 .tab{flex-basis: 40%;}
 .tab p{margin-bottom: 15px;}
-.tab a {transition: 0.5s;}
 .tab img{
 	border-radius: 15px;
 	filter: brightness(80%);
