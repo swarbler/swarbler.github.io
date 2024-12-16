@@ -29,11 +29,54 @@
 	<img class="slide1" src="../_images/projects/revisionio-1.png" alt="placeholder">
 	<img class="slide2" src="../_images/projects/revisionio-2.png" alt="placeholder">
 </div>
+<button id="modalButton">Open Modal</button>
+<div id="projectModal" class="modal">
+	<div class="modal-content">
+		<div class="modal-header">
+			<span class="close">&times;</span>
+			<h2>Modal Header</h2>
+		</div>
+		<div class="modal-body">
+			<p>Some text in the Modal Body</p>
+			<p>Some other text...</p>
+		</div>
+		<div class="modal-footer">
+			<h3>Modal Footer</h3>
+		</div>
+	</div>
+</div>
 <div class="footer">
 	<p>Made with <i data-feather="cloud-drizzle"></i> by sbird</p>
 </div>
 <script>
 	feather.replace();
+</script>
+<script>
+	// Get the modal
+	var modal = document.getElementById("projectModal");
+
+	// Get the button that opens the modal
+	var btn = document.getElementById("modalButton");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on the button, open the modal
+	btn.onclick = function() {
+	modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+	} 
 </script>
 </body>
 </html>
