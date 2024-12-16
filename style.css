@@ -2,26 +2,26 @@
 /* Geosans Light = body text */
 @font-face {
 	font-family: geosans;
-	src: url("./fonts/GeosansLight.ttf");
+	src: url("./_fonts/GeosansLight.ttf");
 }
 /* Garet = header text*/
 @font-face {
 	font-family: garet;
-	src: url("./fonts/Garet-Book.ttf");
+	src: url("./_fonts/Garet-Book.ttf");
 } 
 @font-face {
 	font-family: garet;
-	src: url("./fonts/Garet-Heavy.ttf");
+	src: url("./_fonts/Garet-Heavy.ttf");
 	font-weight: bold;
 } 
 /* Sansation = label text*/ 
 @font-face {
 	font-family: sansation;
-	src: url("./fonts/Sansation_Regular.ttf");
+	src: url("./_fonts/Sansation_Regular.ttf");
 } 
 @font-face {
 	font-family: sansation;
-	src: url("./fonts/Sansation_Bold.ttf");
+	src: url("./_fonts/Sansation_Bold.ttf");
 	font-weight: bold;
 }
 
@@ -126,10 +126,10 @@ nav ul li a::before{
 }
 nav ul li a:hover::before{font-size: 14px;}
 .home::before{content: 'Home';}
-.page1::before{content: 'Page1';}
-.page2::before{content: 'Page2';}
-.page3::before{content: 'Page3';}
-.page4::before{content: 'Page4';}
+.projects::before{content: 'projects';}
+.articles::before{content: 'articles';}
+.games::before{content: 'games';}
+.other::before{content: 'other';}
 .about::before{content: 'About';}
 .example::before{content: 'example';}
 .activenav:hover::before{font-size: 0;}
