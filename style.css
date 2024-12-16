@@ -491,6 +491,29 @@ nav ul li a:hover::before{font-size: 14px;}
 .point:hover{transform: translateX(20px); scale: 1.02; font-size: 20px;}
 .point:hover .feather{margin-right: 15px; scale: 1.2;}
 
+/* gallery */
+
+.section.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 50px;
+}
+.section.gallery h2{
+	padding-bottom: 30px;
+	flex-basis: 100%;
+}
+.section.gallery img{
+	display: flex;
+	flex-basis: 50%;
+	margin: 0;
+	padding: 0;
+	filter: brightness(60%);
+	transition: 0.5s;
+}
+.section.gallery img:hover{
+	filter: brightness(100%);
+}
+
 /* modals */
 .modal {
 	display: none;
