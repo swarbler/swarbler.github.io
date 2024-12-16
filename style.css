@@ -125,12 +125,12 @@ nav ul li a::before{
 	transition: 0.5s;
 }
 nav ul li a:hover::before{font-size: 14px;}
-.home::before{content: 'Home';}
+.home::before{content: 'home';}
 .projects::before{content: 'projects';}
 .articles::before{content: 'articles';}
-.games::before{content: 'games';}
+.photos::before{content: 'photos';}
 .other::before{content: 'other';}
-.about::before{content: 'About';}
+.about::before{content: 'about';}
 .example::before{content: 'example';}
 .activenav:hover::before{font-size: 0;}
 
