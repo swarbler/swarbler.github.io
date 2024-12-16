@@ -437,12 +437,13 @@ nav ul li a:hover::before{font-size: 14px;}
 }
 .tab h3 button{
 	color: #5b7555;
-	background-color: #00000000;
-	border-radius: 5px;
-	border-width: 0;
-	right: 0;
-	cursor: help
+	background: none;
+	border: none;
+	cursor: help;
+	scale: 0.7;
+	transition: 0.5s;
 }
+.tab:hover h3 button{scale: 0.8;}
 .tab:hover img{border-radius: 15px;	filter: brightness(100%);}
 .tab a:hover img{filter: brightness(120%)}
 .tab.float:hover{rotate: -1 -1 -1 2deg;}
