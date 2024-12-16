@@ -496,7 +496,7 @@ nav ul li a:hover::before{font-size: 14px;}
 }
 .modal-body {padding: 2px 16px; margin-top: 20px; margin-bottom: 20px;}
 .modal-body p {font-size: 18px;}
-.modal-body img{padding-top: 20px; border-radius: 20px;	width: 100%;}
+.modal-body img{margin-top: 20px; border-radius: 20px;	width: 100%;}
 .modal-header {	padding: 2px 10px; color: #748c6a;}
 .modal-header a {
 	color: #748c6a;
