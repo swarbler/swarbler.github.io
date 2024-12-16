@@ -52,6 +52,11 @@
 	100%	{filter: sepia(100%);}
 }
 
+@keyframes modal {
+	from {opacity: 0%}
+  	to {opacity: 100%}
+}
+
 /* general */
 
 *{
@@ -441,6 +446,7 @@ nav ul li a:hover::before{font-size: 14px;}
 }
 .tab{flex-basis: 40%;}
 .tab p{margin-bottom: 15px;}
+.tab a {transition: 0.5s;}
 .tab img{
 	border-radius: 15px;
 	filter: brightness(80%);
@@ -448,7 +454,16 @@ nav ul li a:hover::before{font-size: 14px;}
 	width: 600px;
 	height: 400px;
 }
+.tab h3 button{
+	color: #5b7555;
+	background-color: #00000000;
+	border-radius: 5px;
+	border-width: 0;
+	right: 0;
+	cursor: help
+}
 .tab:hover img{border-radius: 15px;	filter: brightness(100%);}
+.tab a:hover img{filter: brightness(120%)}
 .tab.float:hover{rotate: -1 -1 -1 2deg;}
 
 /* cards */
@@ -503,6 +518,8 @@ nav ul li a:hover::before{font-size: 14px;}
 	border: 1px solid #abc1ad;
 	border-radius: 15px;
 	width: 80%;
+	animation-name: modal;
+	animation-duration: 0.4s;
 }
 .close {
 	color: #748c6a;
