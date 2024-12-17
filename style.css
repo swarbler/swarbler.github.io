@@ -2,26 +2,26 @@
 /* Geosans Light = body text */
 @font-face {
 	font-family: geosans;
-	src: url("./_fonts/GeosansLight.ttf");
+	src: url("./fonts/GeosansLight.ttf");
 }
 /* Garet = header text*/
 @font-face {
 	font-family: garet;
-	src: url("./_fonts/Garet-Book.ttf");
+	src: url("./fonts/Garet-Book.ttf");
 } 
 @font-face {
 	font-family: garet;
-	src: url("./_fonts/Garet-Heavy.ttf");
+	src: url("./fonts/Garet-Heavy.ttf");
 	font-weight: bold;
 } 
 /* Sansation = label text*/ 
 @font-face {
 	font-family: sansation;
-	src: url("./_fonts/Sansation_Regular.ttf");
+	src: url("./fonts/Sansation_Regular.ttf");
 } 
 @font-face {
 	font-family: sansation;
-	src: url("./_fonts/Sansation_Bold.ttf");
+	src: url("./fonts/Sansation_Bold.ttf");
 	font-weight: bold;
 }
 
