@@ -496,26 +496,28 @@ nav ul li a:hover::before{font-size: 14px;}
 }
 .modal-body {padding: 2px 16px; margin-top: 20px; margin-bottom: 20px;}
 .modal-body p {font-size: 18px;}
-.modal-body img{margin-top: 20px; border-radius: 20px;	width: 100%;}
-.modal-header {	padding: 2px 10px; color: #748c6a;}
+.modal-body img{margin-top: 20px; border-radius: 20px;	width: 70%; transition: 0.5s;}
+.modal-body img:hover{transform: translateY(-5px); scale: 1.03;}
+.modal-header {padding: 2px 10px; color: #748c6a;}
+.modal-header h2{transition: 0.5s;}
+.modal-header h2:hover{color:#64775b; scale: 1.1; transform: translateX(5%);}
 .modal-header a {
 	color: #748c6a;
 	text-decoration: none;
 	float: right;
 	font-size: 20px;
 	font-weight: bold;
-	scale: 1;
 	transition: 0.5s;
 	padding-right: 25px;
 }
-.modal-header a:hover {	color: #64775b; scale: 1.1;}
+.modal-header a:hover {color: #64775b; scale: 1.1;}
 .modal-content {
 	background-color: #aeb79b;
-	margin: 15% auto;
+	margin: 10% auto;
 	padding: 15px;
-	border: 1px solid #abc1ad;
+	/* border: 1px solid #abc1ad; */
 	border-radius: 15px;
-	width: 80%;
+	width: 60%;
 	animation-name: modal;
 	animation-duration: 0.4s;
 }
@@ -524,7 +526,6 @@ nav ul li a:hover::before{font-size: 14px;}
 	float: right;
 	font-size: 28px;
 	font-weight: bold;
-	scale: 1;
 	transition: 0.3s;
 }
 .close:hover,
