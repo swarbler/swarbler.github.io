@@ -150,21 +150,18 @@ nav ul li a:hover::before{font-size: 14px;}
 }
 .header h3{font-size: 20px;	transition: 0.8s;}
 .header h1{font-size: 36px;	margin-top: 20px;}
-.header h1 span{color: #738164; transition: 0.5s;}
+.header h1 span{color: #738164; transition: 0.5s; display: inline-block;}
 .header:hover h3{color: #6f875f;}
-.header:hover h1 span{font-size: 48px; margin: 0 10px;}
+/* .header:hover h1 span{font-size: 48px; margin: 0 10px;} */
+.header:hover h1 span{transform: scale(1.5); margin: 0 25px;}
 
 /* sections */
 
 .section{padding: 50px;}
 .section h2,
-.bx-section h2{font-size: 28px;	transition: 0.8s;}
-.section h2 .feather,
-.bx-section h2 .feather{transition: transform 0.8s, margin-right 0.3s;}
+.bx-section h2{transition: 0.8s;}
 .section h2:hover,
-.bx-section h2:hover{font-size: 32px;}
-.section h2:hover .feather,
-.bx-section h2:hover .feather{transform: scale(1.5); margin-right: 10px;}
+.bx-section h2:hover{transform: translateX(15px);}
 
 /* boxed sections */
 
@@ -416,9 +413,8 @@ nav ul li a:hover::before{font-size: 14px;}
 
 /* lists */
 
-.lists{	margin-top: 15px; display: flex; flex-wrap: wrap;}
+.lists{margin-top: 15px; display: flex; flex-wrap: wrap;}
 .list{flex-basis: 20%;}
-.list:hover{font-size: 16px;}
 .list h3{margin-bottom: 5px;}
 .big-list{flex-basis: 42.25%;}
 
