@@ -153,7 +153,7 @@ nav ul li a:hover::before{font-size: 14px;}
 .header h1 span{color: #738164; transition: 0.5s; display: inline-block;}
 .header:hover h3{color: #6f875f;}
 /* .header:hover h1 span{font-size: 48px; margin: 0 10px;} */
-.header:hover h1 span{transform: scale(1.5); margin: 0 25px;}
+.header:hover h1 span{transform: scale(1.2); margin: 0 15px;}
 
 /* sections */
 
@@ -546,9 +546,8 @@ nav ul li a:hover::before{font-size: 14px;}
 .icons:hover a{transform: scale(1.2); margin: 5px 15px;}
 .icons a:hover{
 	color: #6d8667;
-	transform: translateY(-5px);
-	scale: 1.5;
-	margin: 5px 20px;
+	transform: translateY(-5px) scale(1.5);
+	/* margin: 5px 20px; */
 }
 
 /* footer */
