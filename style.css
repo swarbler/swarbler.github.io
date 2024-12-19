@@ -159,9 +159,9 @@ nav ul li a:hover::before{font-size: 14px;}
 
 .section{padding: 50px;}
 .section h2,
-.bx-section h2{transition: 0.8s;}
+.bx-section h2{transition: 0.5s;}
 .section h2:hover,
-.bx-section h2:hover{transform: translateX(15px);}
+.bx-section h2:hover{transform: translate(20px, -10px); color: #6f875f}
 
 /* boxed sections */
 
@@ -420,7 +420,7 @@ nav ul li a:hover::before{font-size: 14px;}
 
 /* tabs */
 
-.tabs{ margin-top: 15px; display: flex; flex-wrap: wrap;}
+.tabs{margin-top: 15px; display: flex; flex-wrap: wrap;}
 .tab{flex-basis: 40%;}
 .tab p{margin-bottom: 15px;}
 .tab img{
