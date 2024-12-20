@@ -466,7 +466,6 @@ nav ul li a:hover::before{font-size: 14px;}
 .section.gallery{display: flex;	flex-wrap: wrap;}
 .section.gallery h2{padding-bottom: 30px; flex-basis: 100%;}
 .section.gallery img{
-	display: flex;
 	width: 40%;
 	flex-basis: 40%;
 	margin: 20px;
