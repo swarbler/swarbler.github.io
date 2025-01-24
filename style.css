@@ -157,7 +157,8 @@ nav ul li a:hover::before{font-size: 14px;}
 
 /* sections */
 
-.section{padding: 50px;}
+.section{padding: 50px; padding-bottom: 20px;}
+.section.less-padding{padding-bottom: 15px;}
 .section h2,
 .bx-section h2{transition: 0.5s;}
 .section h2:hover,
