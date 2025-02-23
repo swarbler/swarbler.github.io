@@ -544,6 +544,7 @@ nav ul li a:hover::before{font-size: 14px;}
 }
 
 .prev, .next {
+	cursor: pointer;
 	position: absolute;
 	top: 50%;
 	width: auto;
@@ -566,16 +567,26 @@ nav ul li a:hover::before{font-size: 14px;}
 
 .dot {
 	cursor: pointer;
-	height: 15px;
-	width: 15px;
+	height: 8px;
+	width: 8px;
 	margin: 0 2px;
 	background-color: #748c6a;
-	border-radius: 50%;
+	border-radius: 37%;
 	display: inline-block;
 	transition: background-color 0.6s ease;
 }
 .active, .dot:hover {
 	background-color: #64775b;
+}
+.spot {
+	cursor: pointer;
+	color: #748c6a;
+	display: inline-block;
+	transition: 0.6s ease;
+}
+.spot:hover {
+	color: #64775b;
+	scale: 1.2;
 }
 
 /* icons */
