@@ -624,6 +624,9 @@ nav ul li a:hover::before{font-size: 14px;}
 	transform: translateY(-5px) scale(1.05);
 	/* margin: 5px 20px; */
 }
+.lemmy{
+	transform: translateY(6px)
+}
 
 /* footer */
 
