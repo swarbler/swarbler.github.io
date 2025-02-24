@@ -452,8 +452,8 @@ nav ul li a:hover::before{font-size: 14px;}
 /* timeline */
 
 .timeline{margin-top: 20px;}
-.point{	margin: 15px; margin-bottom: 25px; transition: 0.5s;}
-.point .feather{
+.point{	margin: 15px; margin-bottom: 25px; transition: 0.8s;}
+.point i{
 	display: inline-block;
 	transition: 0.35s;
 	transform: translateY(-5px);
@@ -461,7 +461,7 @@ nav ul li a:hover::before{font-size: 14px;}
 }
 .point .ptext{display: inline-block;}
 .point:hover{transform: translateX(2%); scale: 1.02;}
-.point:hover .feather{margin-right: 15px; scale: 1.2;}
+.point:hover i{margin-right: 15px; font-size: 20px;}
 
 /* gallery */
 
