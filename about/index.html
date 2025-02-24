@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../style.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"/>
 	<script src="https://unpkg.com/feather-icons"></script>
+	<script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 <nav>
@@ -142,12 +143,12 @@
 	</div>
 </div>
 <div class="section inline forums">
-	<h2><i data-feather="message-circle"></i> Forums</h2>
-	<div class="icons">
-		<a href='https://stackoverflow.com/users/26354611/sbird'><i class="ri-stack-overflow-line"></i></a>
-		<a href='https://www.thecodingforums.com/members/scassowary.107374/'><i class="ri-terminal-box-line"></i></a>
-		<a href='https://forums.tomshardware.com/members/swoodpecker.2992082/'><i class="ri-hammer-line"></i></a>
-		<a href='https://www.techspot.com/community/members/sdove.525943/'><i class="ri-triangle-line"></i></a>
+	<h2><i data-feather="message-square"></i> Forums</h2>
+	<div class="links">
+		<a href='https://stackoverflow.com/users/26354611/sbird'><img height="32" width="32" src="https://cdn.simpleicons.org/stackoverflow/7e9275"/> Stack Overflow</a>
+		<a href='https://lemmy.world/u/scheep'><img height="32" width="32" src="https://cdn.simpleicons.org/lemmy/7e9275"/> Lemmy</a>
+		<a href='https://www.thecodingforums.com/members/scassowary.107374/'><i data-lucide="square-terminal"></i> The Coding Forums</a>
+		<a href='https://forums.tomshardware.com/members/swoodpecker.2992082/'><i data-lucide="hammer"></i> Tom's Hardware</a>
 	</div>
 </div>
 <div class="footer">
@@ -155,6 +156,9 @@
 </div>
 <script>
 	feather.replace();
+</script>
+<script>
+    lucide.createIcons();
 </script>
 </body>
 </html>
