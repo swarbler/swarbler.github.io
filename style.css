@@ -117,7 +117,7 @@ nav ul li a::after{
 	bottom: -3px;
 	transition: 0.5s;
 }
-nav ul li a:hover::after{width: 90%;}
+nav ul li a:hover::after{width: 100%;}
 .activenav:hover::after{width: 0%;}
 
 /* nav bar text effect */
